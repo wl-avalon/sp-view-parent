@@ -1,0 +1,32 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.main-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gray-background-color{
+  background-color: #ececec;
+}
+
+.border-solid-top-bottom{
+  border-bottom: 1rpx solid #dcdcdc;
+  border-top: 1rpx solid #dcdcdc;
+}
+
+.white-background-color{
+  background-color: #ffffff;
+}
+
+.height10000{
+  height: 10000rpx;
+}

@@ -1,0 +1,76 @@
+.user-icon-img{
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+  border: 0 solid #ffffff;
+  border-radius: 100rpx;
+}
+.user-icon-area{
+  width: 100%;
+  height: 200rpx;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rpx;
+  margin-top: 20rpx;
+}
+
+.banner{
+  width: 100%;
+  height: 50rpx;
+}
+
+.user-name-area{
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.main-button-area{
+  width: 100%;
+}
+
+.user-info{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  padding-top:20rpx;
+  padding-bottom: 20rpx;
+}
+
+.child-list{
+  width: 100%;
+  height: 90rpx;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.bind-child-button-area{
+  width: 100%;
+  height: 90rpx;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rpx solid #dcdcdc;
+  border-top: 1rpx solid #dcdcdc;
+  background-color: #ffffff;
+  margin-top: 20rpx;
+}
+
+.bind-child-button-down{
+  width: 100%;
+  height: 90rpx;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-color: #dcdcdc;
+  border-bottom: 1rpx solid #dcdcdc;
+  border-top: 1rpx solid #dcdcdc;
+}
+
+.cut-line{
+  width: 100%;
+  border-top: 1rpx solid #dcdcdc;
+}

@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/home/index/index",
+    "pages/mine/index/index",
+    "pages/mine/bindChild/bindChild",
+    "pages/passport/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "超高校",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "iconPath": "resource/global/tabBar/home_up.png",
+        "selectedIconPath": "resource/global/tabBar/home_down.png",
+        "pagePath": "pages/home/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "resource/global/tabBar/mine_up.png",
+        "selectedIconPath": "resource/global/tabBar/mine_down.png",
+        "pagePath": "pages/mine/index/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

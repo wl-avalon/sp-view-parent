@@ -1,0 +1,17 @@
+<view class="main-container height10000 gray-background-color">
+  <picker bindchange="bindPickerChange" value="{{selectedIndex}}" range="{{studentNameList}}">
+    <view class='name-picker'>
+    <view class="name-title">姓名</view>
+    <view class="name-value">{{studentNameList[selectedIndex]}}</view>
+    </view>
+  </picker>
+  <picker bindchange="bindRelationPickerChange" value="{{selectedRelationIndex}}" range="{{relationList}}">
+    <view class='relation-picker'>
+    <view class="name-title">关系</view>
+    <view class="name-value">{{relationList[selectedRelationIndex]}}</view>
+    </view>
+  </picker>
+  <view class="bind-button-area" hover-class='bind-button-area-down' bindtap='bindChild'>
+    <view class="bind-button">绑定</view>
+  </view>
+</view>

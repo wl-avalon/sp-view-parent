@@ -1,0 +1,20 @@
+<view class="main-container gray-background-color height10000">
+  <view class="banner"></view>
+  <view class="user-info border-solid-top-bottom white-background-color">
+    <view class="user-icon-area">
+      <image src="{{userIcon}}" class="user-icon-img"></image>
+    </view>
+    <view class="user-name-area">
+      <view>{{userName}}</view>
+    </view>
+  </view>
+  <view class="cut-line"></view>
+  <view wx:for="{{childList}}" wx:key="unique" class="child-list white-background-color">
+     {{item['childName']}}
+  </view>
+  <block wx:if="{{showBindButton === true}}">
+    <view class="bind-child-button-area border-solid-top-bottom white-background-color" hover-class='bind-child-button-down border-solid-top-bottom' bindtap='jumpToBindChildPage'>
+      添加子女
+    </view>
+  </block>
+</view>
