@@ -3,7 +3,9 @@
     "pages/home/index/index",
     "pages/mine/index/index",
     "pages/mine/bindChild/bindChild",
-    "pages/passport/register/register"
+    "pages/passport/register/register",
+    "pages/home/homeworkList/homeworkList",
+    "pages/home/homeworkDetail/homeworkDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

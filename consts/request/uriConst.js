@@ -3,9 +3,11 @@ const GET_ONE_RANDOM_QUESTION = "/study-palace/question-ui/query/getRandomQuesti
 
 const LOGIN = "/study-palace/passport/commit/login";    //登陆
 const REGISTER = "/study-palace/passport/commit/register"; //注册
-const GET_STUDENT_OF_CLASS = "/study-palace/school-admin/query/getStudentOfClass"//获取班级学生列表
-const BIND_CHILD_TO_PARENT = "/study-palace/school-admin/commit/bindChildToParent"//绑定学生家长
-const GET_CHILD_LIST = "/study-palace/school-admin/query/getChildList"//获取儿女列表
+const GET_STUDENT_OF_CLASS = "/study-palace/school-admin/query/getStudentOfClass";//获取班级学生列表
+const BIND_CHILD_TO_PARENT = "/study-palace/school-admin/commit/bindChildToParent";//绑定学生家长
+const GET_CHILD_LIST = "/study-palace/school-admin/query/getChildList";//获取儿女列表
+const GET_CHILD_HOMEWORK_BRIEF = "/study-palace/homework/query/getChildHomeworkBrief";
+const FINISH_HOMEWORK = "/study-palace/homework/commit/finishHomework";
 
 module.exports = {
   LOGIN: LOGIN,
@@ -13,4 +15,6 @@ module.exports = {
   GET_STUDENT_OF_CLASS: GET_STUDENT_OF_CLASS,
   BIND_CHILD_TO_PARENT: BIND_CHILD_TO_PARENT,
   GET_CHILD_LIST: GET_CHILD_LIST,
+  GET_CHILD_HOMEWORK_BRIEF: GET_CHILD_HOMEWORK_BRIEF,
+  FINISH_HOMEWORK: FINISH_HOMEWORK,
 }

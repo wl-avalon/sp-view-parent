@@ -1,2 +1,7 @@
-<!--pages/home/index/index.wxml-->
-<text>pages/home/index/index.wxml</text>
+<view class="main-container gray-background-color height10000">
+  <view class="child-list-area">
+    <view wx:for="{{childList}}" wx:key="unique" data-idx="{{index}}" class="child-item" hover-class="child-item-down" bindtap='jumpToHomeworkList'>
+      {{item.childName}}
+    </view>
+  </view>
+</view>

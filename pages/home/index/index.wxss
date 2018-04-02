@@ -1,1 +1,23 @@
-/* pages/home/index/index.wxss */
+.child-list-area{
+  border-top: 1rpx solid #dcdcdc;
+}
+
+.child-item{
+  width: 100%;
+  height: 90rpx;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.child-item-down{
+  width: 100%;
+  height: 90rpx;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-color: #dcdcdc;
+  border-bottom: 1rpx solid #dcdcdc;
+}

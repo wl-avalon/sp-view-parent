@@ -1,0 +1,28 @@
+<view class="main-container gray-background-color height10000">
+  <view wx:if="{{allDone === true && nothingDone === true}}" class="not-layout-homework">
+    老师尚未布置今天的作业
+  </view>
+  <view class="not-done-homework-area" wx:if="{{allDone === false}}">
+    <view class="not-done-title">
+      待完成
+    </view>
+    <view wx:for="{{notDone}}" wx:key="unique" data-idx="{{index}}" data-type="notDone" class="not-done-item" bindtap="getHomeworkDetail" hover-class='subject-item-down'>
+      <view class="subject-item">
+        <view class="subject-title">科目</view>
+        <view class="subject-value">{{subjectArray[item.subject]}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="has-done-homework-area" wx:if="{{nothingDone === false}}">
+    <view class="has-done-title">
+      已完成
+    </view>
+    <view wx:for="{{hasDone}}" wx:key="unique" data-idx="{{index}}" data-type="hasDone" class="has-done-item" hover-class='subject-item-down' bindtap="getHomeworkDetail">
+      <view class="subject-item">
+        <view class="subject-title">科目</view>
+        <view class="subject-value">{{subjectArray[item.subject]}}</view>
+      </view>
+    </view>
+  </view>
+</view>

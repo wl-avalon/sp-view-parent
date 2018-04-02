@@ -5,7 +5,7 @@ Page({
   data: {
     userIcon: '',
     userName: '',
-    classList: {},
+    childList: [],
   },
 
   onLoad: function(options){
@@ -20,7 +20,6 @@ Page({
     SchoolAdminApi.getChildList(getParams);
   },
   setChildList: function (data) {
-    console.log(data);
     var childList = data.childList;
     if (childList === undefined) {
       childList = [];
@@ -28,5 +27,13 @@ Page({
     this.setData({
       childList: childList,
     });
+  },
+  jumpToHomeworkList: function(e){
+    var touchChlidIndex = e.currentTarget.dataset.idx;
+    var childInfo = this.data.childList[touchChlidIndex];
+    var childUuid = childInfo.childUuid;
+    wx.navigateTo({
+      url: '/pages/home/homeworkList/homeworkList?childUuid=' + childUuid,
+    })
   }
 });

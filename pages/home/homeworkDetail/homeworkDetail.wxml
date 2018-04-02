@@ -1,0 +1,21 @@
+<view class="main-container gray-background-color height10000">
+  <view class="homework-title-area">
+    <view class="homework-title"> 作业内容 </view>
+    <view class="homtwork-title-cut-value"></view>
+    <view class="homework-value">{{homeworkContent}}</view>
+  </view>
+
+  <view class="commit-info-area">
+    <view class="minute-item">
+      <text class="minute-title">作业耗时</text>
+      <input class="minute-input" type="number" bindinput="saveInput"></input>
+      <text class="minute-unit">分钟</text>
+    </view>
+  </view>
+
+  <view class="main-button-area">
+    <view class="finish-homework-button" hover-class="finish-homework-button-down" bindtap="finishHomework">
+      完成作业
+    </view>
+  </view>
+</view>

@@ -11,4 +11,23 @@ var commitHomework = function (params) {
   CommonApi.requestPost(url, postData, params.successFunc, params.failedFunc);
 }
 
-module.exports.commitHomework = commitHomework;
+var getChildHomeworkBrief = function (params) {
+  var url = domain.STUDY_PALACE_HOST + uriConst.GET_CHILD_HOMEWORK_BRIEF;
+  var postData = {
+    childUuid: params.childUuid,
+  };
+  CommonApi.requestPost(url, postData, params.successFunc, params.failedFunc);
+}
+
+var finishHomework = function (params) {
+  var url = domain.STUDY_PALACE_HOST + uriConst.FINISH_HOMEWORK;
+  var postData = {
+    childUuid: params.childUuid,
+    homeworkUuid: params.homeworkUuid,
+    minutes: params.minutes,
+  };
+  CommonApi.requestPost(url, postData, params.successFunc, params.failedFunc);
+}
+
+module.exports.finishHomework = finishHomework;
+module.exports.getChildHomeworkBrief = getChildHomeworkBrief;
