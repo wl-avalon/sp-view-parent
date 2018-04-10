@@ -20,7 +20,6 @@ Page({
   },
   setUserIcon: function (res) {
     var classUuid = wx.getStorageSync('classUuid');
-    classUuid = '845373327512956931';
     var showBindButton = false;
     if(classUuid !== undefined && classUuid !== ''){
       showBindButton = true;

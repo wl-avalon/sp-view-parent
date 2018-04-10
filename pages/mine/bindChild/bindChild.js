@@ -22,7 +22,6 @@ Page({
   onLoad: function (options) {
     LoginService.checkLogin();
     var classUuid = options.clasUuid;
-    classUuid = '845373327512956931';
     this.setData({
       classUuid: classUuid,
     });

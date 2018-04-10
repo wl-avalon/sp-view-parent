@@ -13,7 +13,6 @@ Page({
    */
   onLoad: function (options) {
     var classUuid = options.classUuid;
-    classUuid = '845373327512956931';
     wx.setStorageSync('classUuid', classUuid);
     RegisterService.register();
   },

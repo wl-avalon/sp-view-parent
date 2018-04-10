@@ -7,7 +7,7 @@ Page({
    */
   data: {
     childUuid: '',
-    subjectArray: ['语文', '数学', '英语', '物理', '化学', '生物', '历史', '地理', '政治'],
+    subjectArray: ['无', '语文', '数学', '英语', '物理', '化学', '生物', '历史', '地理', '政治', '其他'],
     notDone: [],
     hasDone: [],
     allDone: false,
