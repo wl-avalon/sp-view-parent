@@ -13,7 +13,8 @@ Page({
       successFunc: this.loginSuccess,
     };
     LoginService.checkLogin(loginParams);
-
+  },
+  loginSuccess: function(){
     var getParams = {
       successFunc: this.setChildList,
     };

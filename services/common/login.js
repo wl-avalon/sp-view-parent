@@ -55,10 +55,17 @@ function loginFailed() {
   wx.removeStorageSync('memberID');
   wx.removeStorageSync('isLogin');
   wx.showToast({
-    title: "网络繁忙,请稍后再试",
+    title: "登录失败，请注册后登陆",
     icon: 'none',
     duration: 2000,
     mask: true,
+    success: function () {
+      setTimeout(function () {
+        wx.reLaunch({
+          url: '/pages/passport/login/login',
+        });
+      }, 2000);
+    }
   });
 }
 

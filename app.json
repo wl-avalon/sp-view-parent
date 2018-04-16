@@ -5,7 +5,8 @@
     "pages/mine/bindChild/bindChild",
     "pages/passport/register/register",
     "pages/home/homeworkList/homeworkList",
-    "pages/home/homeworkDetail/homeworkDetail"
+    "pages/home/homeworkDetail/homeworkDetail",
+    "pages/passport/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

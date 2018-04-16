@@ -1,0 +1,6 @@
+<view class="main-container">
+  <view>
+    <view class="error-message">内测阶段暂不支持开放注册</view>
+    <view class="error-message">详情请联系电话：15801450732</view>
+  </view>
+</view>
