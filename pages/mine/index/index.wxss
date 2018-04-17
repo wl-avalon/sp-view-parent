@@ -47,6 +47,16 @@
   border-bottom: 1rpx solid #dcdcdc;
 }
 
+.child-list-down{
+  width: 100%;
+  height: 90rpx;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rpx solid #dcdcdc;
+  background-color: #dcdcdc;
+}
+
 .bind-child-button-area{
   width: 100%;
   height: 90rpx;

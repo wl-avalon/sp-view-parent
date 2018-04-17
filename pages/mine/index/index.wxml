@@ -9,7 +9,7 @@
     </view>
   </view>
   <view class="cut-line"></view>
-  <view wx:for="{{childList}}" wx:key="unique" class="child-list white-background-color">
+  <view wx:for="{{childList}}" wx:key="unique" class="child-list white-background-color" hover-class="child-list-down" bindtap="jumpToFinishDetail" data-idx="{{index}}">
      {{item['childName']}}
   </view>
   <block wx:if="{{showBindButton === true}}">

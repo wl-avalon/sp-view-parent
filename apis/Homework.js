@@ -29,5 +29,16 @@ var finishHomework = function (params) {
   CommonApi.requestPost(url, postData, params.successFunc, params.failedFunc);
 }
 
+var getStudentFinishDetail = function(params) {
+  var url = domain.STUDY_PALACE_HOST + uriConst.GET_STUDENT_FINISH_DETAIL;
+  var postData = {
+    studentUuid: params.studentUuid,
+    weekIndex: params.weekIndex,
+    subject: params.subject,
+  };
+  CommonApi.requestPost(url, postData, params.successFunc, params.failedFunc);
+}
+
 module.exports.finishHomework = finishHomework;
 module.exports.getChildHomeworkBrief = getChildHomeworkBrief;
+module.exports.getStudentFinishDetail = getStudentFinishDetail;

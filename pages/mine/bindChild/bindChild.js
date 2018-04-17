@@ -111,6 +111,7 @@ Page({
 })
 
 function bindSuccess(){
+  wx.removeStorageSync('classUuid');
   wx.showToast({
     title: "成功",
     icon: 'success',

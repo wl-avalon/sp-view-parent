@@ -1,0 +1,6 @@
+<view class='jump-finish-detail-button' hover-class='jump-finish-detail-button-down' bindtap='jumpToFinishDetail'>
+  查看作业统计
+</view>
+<view class='jump-class-finish-button' hover-class='jump-class-finish-button-down' bindtap='jumpToClassFinish'>
+  班级作业完成情况
+</view>

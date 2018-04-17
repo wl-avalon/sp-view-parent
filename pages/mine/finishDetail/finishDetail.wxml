@@ -1,0 +1,28 @@
+<picker bindchange="bindPickerChange" value="{{selectedIndex}}" range="{{subjectArray}}">
+  <view class='subject-picker'>
+    <view class="item-title">科目</view>
+    <view class="item-value">{{subjectArray[subject]}}</view>
+  </view>
+</picker>
+<view class="start-date-area">
+  <view class="item-title">起始日期</view>
+  <view class="item-value">{{startDate}}</view>
+</view>
+<view class="end-date-area">
+  <view class="item-title">结束日期</view>
+  <view class="item-value">{{endDate}}</view>
+</view>
+<view class="change-week-button-area">
+  <view class="move-week-button" hover-class="move-week-button-down" bindtap='moveLeftWeek'>
+    前移一周
+  </view>
+  <view class="move-week-button" hover-class="move-week-button-down" bindtap='moveRightWeek'>
+    后移一周
+  </view>
+</view>
+<view class="get-detail-button" hover-class="get-detail-button-down" bindtap='getStudentFinishDetail'>
+  查询
+</view>
+<view class="finish-detail-area">
+    <ec-canvas class="finish-detail-echart" id="finish-detail-echart" ec="{{ ec }}"></ec-canvas>
+</view>

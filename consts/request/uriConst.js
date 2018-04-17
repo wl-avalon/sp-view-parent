@@ -8,6 +8,7 @@ const BIND_CHILD_TO_PARENT = "/study-palace/school-admin/commit/bindChildToParen
 const GET_CHILD_LIST = "/study-palace/school-admin/query/getChildList";//获取儿女列表
 const GET_CHILD_HOMEWORK_BRIEF = "/study-palace/homework/query/getChildHomeworkBrief";
 const FINISH_HOMEWORK = "/study-palace/homework/commit/finishHomework";
+const GET_STUDENT_FINISH_DETAIL = "/study-palace/homework/query/getStudentFinishDetail";
 
 module.exports = {
   LOGIN: LOGIN,
@@ -17,4 +18,5 @@ module.exports = {
   GET_CHILD_LIST: GET_CHILD_LIST,
   GET_CHILD_HOMEWORK_BRIEF: GET_CHILD_HOMEWORK_BRIEF,
   FINISH_HOMEWORK: FINISH_HOMEWORK,
+  GET_STUDENT_FINISH_DETAIL: GET_STUDENT_FINISH_DETAIL,
 }

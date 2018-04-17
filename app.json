@@ -1,12 +1,15 @@
 {
   "pages": [
-    "pages/home/index/index",
+    "pages/mine/classFinishDetail/classFinishDetail",
     "pages/mine/index/index",
+    "pages/home/index/index",
     "pages/mine/bindChild/bindChild",
     "pages/passport/register/register",
     "pages/home/homeworkList/homeworkList",
     "pages/home/homeworkDetail/homeworkDetail",
-    "pages/passport/login/login"
+    "pages/passport/login/login",
+    "pages/mine/finishDetail/finishDetail",
+    "pages/mine/controlJump/controlJump"
   ],
   "window": {
     "backgroundTextStyle": "light",

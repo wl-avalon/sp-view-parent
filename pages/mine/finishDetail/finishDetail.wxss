@@ -1,0 +1,85 @@
+page{
+  background-color: #ececec;
+}
+
+.subject-picker{
+  height: 90rpx;
+  padding-left: 30rpx;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-top: 1rpx solid #dcdcdc;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.item-value{
+  position: absolute;
+  right: 30rpx;
+}
+
+.start-date-area{
+  height: 90rpx;
+  padding-left: 30rpx;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.end-date-area{
+  height: 90rpx;
+  padding-left: 30rpx;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.change-week-button-area{
+  height: 90rpx;
+  display: flex;
+  margin-top: 30rpx;
+  background-color: #ffffff;
+  border-top: 1rpx solid #dcdcdc;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.move-week-button{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1rpx solid #dcdcdc;
+}
+.move-week-button-down{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dcdcdc;
+  border-right: 1rpx solid #dcdcdc;
+}
+.get-detail-button{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.get-detail-button-down{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dcdcdc;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.finish-detail-area{
+  width: 100%;
+  height: 600rpx; 
+  /* padding-left: 30rpx; */
+  margin-top: 50rpx;
+  background-color: #ffffff;
+  padding-left: 20rpx;
+}

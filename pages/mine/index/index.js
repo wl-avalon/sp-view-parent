@@ -50,7 +50,6 @@ Page({
     SchoolAdminApi.getChildList(getParams);
   },
   setChildList: function(data){
-    console.log(data);
     var childList = data.childList;
     if(childList === undefined){
       childList = [];
@@ -58,5 +57,13 @@ Page({
     this.setData({
       childList: childList,
     });
-  }
+  },
+  jumpToFinishDetail: function(e){
+    var touchClassIndex = e.currentTarget.dataset.idx;
+    var childInfo = this.data.childList[touchClassIndex];
+    var childUuid = childInfo.childUuid;
+    wx.navigateTo({
+      url: '../controlJump/controlJump?studentUuid=' + childUuid,
+    });
+  },
 })
